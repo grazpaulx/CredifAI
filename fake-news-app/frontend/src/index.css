@@ -1,0 +1,11 @@
+@import "tailwindcss";
+
+:root{ color-scheme: light dark; }
+
+@layer base {
+  body {
+    @apply bg-no-repeat bg-cover bg-center;
+    background-image: url('./assets/background.png');
+  }
+}
+

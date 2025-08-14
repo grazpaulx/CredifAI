@@ -1,0 +1,43 @@
+.animated-words {
+  display: inline-block;
+}
+
+.animated-words span {
+  opacity: 0;
+  display: inline-block;
+  animation: fadeIn 0.5s forwards;
+}
+
+.animated-words span:nth-child(1) { animation-delay: 0.1s; }
+.animated-words span:nth-child(2) { animation-delay: 0.3s; }
+.animated-words span:nth-child(3) { animation-delay: 0.5s; }
+.animated-words span:nth-child(4) { animation-delay: 0.7s; }
+.animated-words span:nth-child(5) { animation-delay: 0.9s; }
+.animated-words span:nth-child(6) { animation-delay: 1.1s; }
+/* Add more delays if needed for longer text */
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400&family=Poppins:wght@800&display=swap');
+
+.font-poppins {
+  font-family: 'Poppins', sans-serif;
+}
+
+.font-opensans {
+  font-family: 'Open Sans', sans-serif;
+}
+/* Landing.css */
+
+.landing-page {
+  background-image: url('../assets/background.png');
+  background-size: contain; /* Show full image without zooming in */
+  background-repeat: repeat; /* Repeat if small */
+  background-position: center;
+  background-color: white; /* Keep a white base */
+  min-height: 100vh; /* Ensure full height */
+}
